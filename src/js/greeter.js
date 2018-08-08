@@ -1,7 +1,7 @@
 import createHTMLElement from './service';
 
 // Creating element.
-function createElement(name) {
+export function createElement(name) {
   const element = createHTMLElement(`<h1><span>Hello ${name}<span></h1>`);
   // console.log(element);
 
