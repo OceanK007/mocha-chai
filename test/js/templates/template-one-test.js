@@ -14,10 +14,30 @@ describe('template-one File Test', function()
 
     describe("templateOne2 Function Test", function()
     {
-        it('It should return number', function() 
+        let result = templateOne.templateOne2();
+
+        describe("templateOne2 Function typeOf Test", function()
         {
-            let result = templateOne.templateOne2();
-            assert.typeOf(result, 'number', 'we have a number');
-        })
+            it('It should return number', function() 
+            {
+                assert.typeOf(result, 'number', 'we have a number');
+            })   
+        });
+
+        describe("templateOne2 Function equality Test", function()
+        {
+            it('It should be equal to 10', function() 
+            {
+                assert.equal(result, 10);
+            })   
+        });
+
+        describe("templateOne2 Function isAbove Test", function()
+        {
+            it('It should be greater than 5', function() 
+            {
+                assert.isAbove(result, 5);
+            })   
+        });
     });
 });
