@@ -18,6 +18,7 @@
 
 # To run tests:
 1. npm run test
+2. npm run test-browser     // Then check browser and click debug button.
 
 # Difference between devDependencies and dependencies:
 * The difference between these two, is that devDependencies are modules which are only required during development, while dependencies are modules which are also required at runtime.
@@ -52,6 +53,13 @@
 
 # URL Eslint: 
 https://medium.com/dailyjs/adding-eslint-to-your-project-7bd4feca35a8    // Use for "eslint init" > setup initial steps only.
+
+# URL Karma, Mocha, Chai
+https://www.meziantou.net/2018/03/15/test-javascript-code-using-karma-mocha-chai-and-headless-browsers
+https://developers.google.com/web/updates/2017/06/headless-karma-mocha-chai
+http://www.chaijs.com/api/assert/#method_typeof
+
+https://github.com/gabel/karma-webpack-example/blob/master/karma.conf.js            // Main
 
 # URL
 https://webpack.js.org/guides/getting-started/#basic-setup

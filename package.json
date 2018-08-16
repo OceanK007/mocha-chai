@@ -7,7 +7,8 @@
   "license": "ISC",
   "keywords": [],
   "scripts": {
-    "test": "mocha --compilers js:@babel/register ./test/**/*.js || exit 0",
+    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
+    "test-browser": "karma start --browsers ChromeHeadless karma.conf.js",
     "start": "webpack-dev-server --open",
     "build": "webpack"
   },
@@ -35,6 +36,19 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^5.2.0"
+    "istanbul": "^0.4.5",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "karma": "^3.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-mocha": "^1.3.0",
+    "karma-requirejs": "^1.1.0",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^3.0.0",
+    "mocha": "^5.2.0",
+    "requirejs": "^2.3.5"
   }
 }
