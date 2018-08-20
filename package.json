@@ -7,8 +7,8 @@
   "license": "ISC",
   "keywords": [],
   "scripts": {
-    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
-    "test-browser": "karma start --browsers ChromeHeadless karma.conf.js",
+    "test": "karma start karma.conf.js",
+    "test-browser": "karma start --single-run false --browsers ChromeHeadless karma.conf.js",
     "start": "webpack-dev-server --open",
     "build": "webpack"
   },
