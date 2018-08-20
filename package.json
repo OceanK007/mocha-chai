@@ -7,7 +7,7 @@
   "license": "ISC",
   "keywords": [],
   "scripts": {
-    "test": "mocha --compilers js:@babel/register ./test/**/*.js || exit 0",
+    "test": "mocha --compilers js:@babel/register \"./test/**/*.js\" || exit 0",
     "start": "webpack-dev-server --open",
     "build": "webpack"
   },
